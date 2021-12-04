@@ -6,46 +6,66 @@
   <a href="#description">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#requirements">Requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#usage">Usage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#contact">Contact</a>
+  <a href="#usage">Usage</a></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#demonstration">Demonstration</a>
+</p>
+<br />
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=license&message=MIT" alt="License">
+  <img src="https://img.shields.io/github/repo-size/Lissone/SaganSat-website" alt="Repo size" />
+  <img src="https://img.shields.io/github/languages/top/Lissone/SaganSat-website" alt="Top lang" />
+  <img src="https://img.shields.io/github/stars/Lissone/SaganSat-website" alt="Stars repo" />
+  <img src="https://img.shields.io/github/forks/Lissone/SaganSat-website" alt="Forks repo" />
+  <img src="https://img.shields.io/github/issues-pr/Lissone/SaganSat-website" alt="Pull requests" >
+  <img src="https://img.shields.io/github/last-commit/Lissone/SaganSat-website" alt="Last commit" />
 </p>
 
 <p align="center">
- <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=49AA26&labelColor=000000" alt="PRs welcome!" />
-
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <a href="https://github.com/Lissone/SaganSat-website/issues">Report bug</a>
+  ·
+  <a href="https://github.com/Lissone/SaganSat-website/issues">Request feature</a>
 </p>
 
-<br>
+<br />
 
 ## Description
+
 This project is a website with the aim of creating support contacts to be able to create a nano satellite. 
 
 For more information about the project: https://github.com/SaganSat-EA
 
 ## Requirements
 
-* [Yarn](https://yarnpkg.com/)
-* [Nodejs](https://nodejs.org/en/)
+- [Npm](https://www.npmjs.com/)
+- [Yarn](https://yarnpkg.com/)
+- [Nodejs](https://nodejs.org/en/)
 
 ## Technologies
 
-- Typescript
-- Next.js
 - React
+- NextJs
+- Typescript
 - StyledComponents
 - EmailJs
 
 ## Usage
 
+You can clone it on your pc using the command:
+
 ```bash
 git clone https://github.com/Lissone/SaganSat-website.git
 cd SaganSat-website
+```
 
+Install dependencies using:
+
+```bash
 yarn
 #or
-npm run
+npm install
 ```
+
+Run web:
 
 ```bash
 yarn dev
@@ -53,12 +73,16 @@ yarn dev
 npm run dev
 ```
 
-## Contact
+## Demonstration
 
-Phone: (+55) 11 910487619 
+<img src="./.github/sagansat-demo.png" alt="Sagansat Demo - Como nos ajudar?" width="100%" height="100%"/>
 
-Email: leonardo.lissonez@gmail.com
+## License
 
-GitHub: https://github.com/Lissone
+Distributed under the MIT License. See `LICENSE` for more information.
 
-LinkedIn: https://www.linkedin.com/in/lissone/
+<h4 align="center">
+  Made with ❤️ by <a href="https://github.com/Lissone" target="_blank">Lissone</a>
+</h4>
+
+<hr />
