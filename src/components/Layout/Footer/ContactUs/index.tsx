@@ -9,6 +9,10 @@ import { TextArea } from '../Form/textArea'
 import { Container, Content, Form, Button } from './styles'
 import { toast } from 'react-toastify'
 
+const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || ''
+const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || ''
+const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+
 interface Contact {
   email: string
   name: string
@@ -18,12 +22,6 @@ interface Contact {
 export function ContactUs({ id }) {
   const [isButtonDisabled, setIsButtonDisabled] = useState(false)
   const formRef = useRef(null)
-
-  const emailJs = {
-    serviceId: 'sagan_sat',
-    templateId: 'template_7x7ky8h',
-    userId: 'user_b4gzjCyjuo9luPAeTNa3p'
-  }
 
   async function handleSubmit(data: Contact, { reset }) {
     try {
@@ -45,7 +43,7 @@ export function ContactUs({ id }) {
         abortEarly: false
       })
       
-      await sendEmail(data)
+      sendEmail(data)
 
       formRef.current.setErrors({})
       
@@ -68,7 +66,7 @@ export function ContactUs({ id }) {
   }
 
   function sendEmail(data: Contact) {
-    emailjs.send(emailJs.serviceId, emailJs.templateId, data, emailJs.userId)
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, data, EMAILJS_PUBLIC_KEY)
       .then(() => {
         toast.dark('Sua mensagem foi enviada para equipe Sagan ✔')
         setIsButtonDisabled(false)

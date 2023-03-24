@@ -4,10 +4,10 @@
 
 <p align="center">
   <a href="#description">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#demonstration">Demonstration</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#requirements">Requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#usage">Usage</a></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#demonstration">Demonstration</a>
+  <a href="#usage">Usage</a></a>
 </p>
 <br />
 <p align="center">
@@ -33,6 +33,10 @@
 This project is a website with the aim of creating support contacts to be able to create a nano satellite. 
 
 For more information about the project: https://github.com/SaganSat-EA
+
+## Demonstration
+
+<img src="./.github/sagansat-demo.png" alt="Sagansat Demo - Como nos ajudar?" width="100%" height="100%"/>
 
 ## Requirements
 
@@ -65,6 +69,17 @@ yarn
 npm install
 ```
 
+Need to add environment variables:
+
+```bash
+# .\.env.local
+
+# EMAILJS
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=
+```
+
 Run web:
 
 ```bash
@@ -72,10 +87,6 @@ yarn dev
 #or
 npm run dev
 ```
-
-## Demonstration
-
-<img src="./.github/sagansat-demo.png" alt="Sagansat Demo - Como nos ajudar?" width="100%" height="100%"/>
 
 ## License
 
